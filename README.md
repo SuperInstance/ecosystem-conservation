@@ -51,8 +51,24 @@ This is an **application** of the framework rather than an SDK implementation. I
 - [conservation-art](https://github.com/SuperInstance/conservation-art) — Artistic visualizations
 - [code-conservation](https://github.com/SuperInstance/code-conservation) — Conservation in software dependency graphs
 
+## Testing
+
+```bash
+pip install pytest numpy matplotlib scipy
+pytest tests/ -v
+```
+
+Tests cover:
+- Food web construction (Ythan Estuary, Cascade model, Niche model)
+- Laplacian construction (symmetry, row sums, PSD)
+- Conservation score (range, determinism, edge cases)
+- Trophic level computation
+- All experiment functions (stability, invasion, extinction, trophic analysis, synthetic)
+
 ## License
 
 MIT
 
-Part of the [SuperInstance OpenConstruct](https://github.com/SuperInstance/OpenConstruct) ecosystem.
+---
+
+Part of the [OpenConstruct](https://github.com/SuperInstance) ecosystem — spectral graph theory meets ecology.
